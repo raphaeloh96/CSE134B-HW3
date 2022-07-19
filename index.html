@@ -6,6 +6,8 @@
     <title>Raphael Oh's Website</title>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <style>
         table,
         th,
@@ -13,12 +15,15 @@
             border: 1px solid gray;
         }
     </style>
+    <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script>
+    <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
 <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script>
 </head>  
 
 <body>
     <header>
-        <nav>
+        <nav id="navbar">
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -27,30 +32,43 @@
                 <li><a href="#experience">Work Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact Information</a></li>
-                <li><a href="#experiments">Experiments</a></li>
+                <!--<li><a href="#experiments">Experiments</a></li>-->
             </ul>
         </nav>
     </header>
 
     <main>
-        <div>
-            <img src="me.png"
-                alt="Raphael Oh's photo" width="140" height="140">
+        <a href="#navbar" class="go-to-top">
+            <img src="arrow-up.svg" alt="Go to Top">
+        </a>
+        <div id="intro">
             <h1>
-                Raphael Oh
+                Raphael Young Oh
             </h1>
-            <h2>
-                Software Developer | Computer Science BS | UCSD 2023
+            <h2 class="intro-h2-tablet">
+                Software Developer | Computer Science B.S. | UCSD 2023
+            </h2>
+            <h2 class="intro-h2-mobile">
+                Software Developer
+            </h2>
+            <h2 class="intro-h2-mobile">
+                Computer Science B.S.
+            </h2>
+            <h2 class="intro-h2-mobile">
+                UCSD 2023
             </h2>
             <aside>
                 <p><i>"Let us not forget that human knowledge and skills alone cannot lead humanity to a happy and dignified life."</i>-Albert Einstein</p>
             </aside>
         </div>
 
-        <hr>
         <section id="about">
             <h2>About</h2>
             <h3>Biography</h3>
+            <picture>
+                <source srcset="me.png">
+                <img alt="Raphael Oh's Photo" src="me.png" width="160" height="160">
+            </picture>
             <p>
                 I was born in Seoul, South Korea. <br>
                 My family immigrated to the United States in 2006. <br>
@@ -64,199 +82,199 @@
             </form>
         </section>
 
-        <hr>
         <section id="skills">
             <h2>Skills</h2>
 
             <table>
-                <caption>Programming Languages</caption>
                 <colgroup>
-                    <col span="2" style="width: 50%;">
+                    <col span="2" style="width: 40%;">
                 </colgroup>
-                <tr>
-                    <th>Skill</th>
-                    <th>Proficiency Level</th>
-                </tr>
+
                 <tr>
                     <td>
-                        <h3>Java</h3>
+                        <p>Java</p>
                     </td>
                     <td><progress value="85" max="100"> 85% </progress></td>
                 </tr>
                 <tr>
                     <td>
-                        <h3>HTML</h3>
+                        <p>HTML</p>
                     </td>
                     <td><progress value="80" max="100"> 80% </progress></td>
                 </tr>
                 <tr>
                     <td>
-                        <h3>C++</h3>
+                        <p>C++</p>
                     </td>
                     <td><progress value="70" max="100"> 70% </progress></td>
                 </tr>
                 <tr>
                     <td>
-                        <h3>Javascript</h3>
+                        <p>JavaScript</p>
                     </td>
                     <td><progress value="50" max="100"> 50% </progress></td>
                 </tr>
                 <tr>
                     <td>
-                        <h3>Python</h3>
+                        <p>Python</p>
                     </td>
                     <td><progress value="20" max="100"> 20% </progress></td>
                 </tr>
                 <tr>
                     <td>
-                        <h3>Kotlin</h3>
+                        <p>Kotlin</p>
                     </td>
                     <td><progress value="10" max="100"> 10% </progress></td>
                 </tr>
             </table>
         </section>
         
-        <hr>
         <section id="education">
             <h2>Education</h2>
-            <p>
-                <b>Northwood High School</b> <br>
+            <p>Here is my Education History</p>
+            <h3>Northwood High School</h3>
+            <p class="">
                 I attended Northwood High School from 2011 to 2015. <br>
                 Northwood High School is located in Irvine, California.
             </p>
+            <br>
+            <h3>Cerritos College</h3>
             <p>
-                <b>Cerritos College</b> <br>
                 I attended Cerritos College from 2018 to 2020. <br>
                 My major was Computer Science, A.S. <br>
                 Cerritos College is located in Cerritos, California.
             </p>
+            <br>
+            <h3>University of California, San Diego</h3>
             <p>
-                <b>University of California, San Diego</b> <br>
                 I attended UCSD from 2020 to 2023. <br>
                 My major was Computer Science, B.S. <br>
                 UCSD is located in San Diego, California.
             </p>
         </section>
 
-        <hr>
         <section id="experience">
             <h2>Work Experience</h2>
-            <ol>
-                <li>
+            <p>Here is my Work History</p>
+            <div>
                     <h3>Private Tennis Coach</h3>
                     <p><em>January 2019 - Current</em></p>
-                    <p>Tennis Coach</p>
+                    <p><b>Tennis Coach</b></p>
                     <p>I am teaching tennis for all levels. I work with each clients for both strengths and weaknesses.</p>
-                </li>
-                <li>
+                    <br>
                     <h3>Zzan Hillcrest Korean Soju House</h3>
                     <p><em>November 2020 - Current</em></p>
-                    <p>Server</p>
+                    <p><b>Server</b></p>
                     <p>I worked as a server/bartender at a Korean Soju House in Hillcrest, California.</p>
-                </li>
-                <li>
+                    <br>
                     <h3>Rice Goban</h3>
                     <p><em>June 2020 - October 2020</em></p>
-                    <p>Cashier</p>
+                    <p><b>Cashier</b></p>
                     <p>I worked as a cashier at a Korean-fast food restaurant.</p>
-                </li>
-            </ol>
+            </div>
         </section>
         
-        <hr>
         <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <h3>Project 1 Name</h3>
-                    <p>Project 1 information</p>
-                    <details>
-                        <summary>Project 1 Links</summary>
-                        <a href="https://github.com/user/project1/">
-                            Source Code
-                        </a><br>
-                        <a href="https://project1livedemo.com/">
-                            Live Demo
-                        </a>
-                    </details>
-                </li>
+            <h2>My Projects</h2>
+            <div>
 
-                <li>
-                    <h3>Project 2 Name</h3>
-                    <p>Project 2 information</p>
-                    <details>
-                        <summary>Project 2 Links</summary>
-                        <a href="https://github.com/user/project2/">
-                            Source Code
-                        </a><br>
-                        <a href="https://project2livedemo.com/">
-                            Live Demo
-                        </a>
-                    </details>
-                </li>
+                <h3>Project 1 Name</h3>
+                <p>Project 1 Information</p>
+                <div class="project-buttons">
+                    <form action="https://github.com/user/project1/">
+                        <button type="submit">
+                                Source Code
+                            </button>
+                    </form>
 
+                    <form action="https://project1livedemo.com/">
+                        <button type="submit">
+                                Live Demo
+                            </button>
+                    </form>
+                </div>
+                <h3>Project 2 Name</h3>
+                <p>Project 2 Information</p>
+                <div class="project-buttons">
+                    <form action="https://github.com/user/project2/">
+                        <button type="submit">
+                                Source Code
+                            </button>
+                    </form>
 
-                <li>
-                    <h3>Project 3 Name</h3>
-                    <p>Project 3 information</p>
-                    <details>
-                        <summary>Project 3 Links</summary>
-                        <a href="https://github.com/user/project3/">
-                            Source Code
-                        </a><br>
-                        <a href="https://project3livedemo.com/">
-                            Live Demo
-                        </a>
-                    </details>
-                </li>
-            </ul>
+                    <form action="https://project2livedemo.com/">
+                        <button type="submit">
+                                Live Demo
+                            </button>
+                    </form>
+                </div>
+
+                <h3>Project 3 Name</h3>
+                <p>Project 3 Information</p>
+                <div class="project-buttons">
+                    <form action="https://github.com/user/project3/">
+                        <button type="submit">
+                                Source Code
+                            </button>
+                    </form>
+
+                    <form action="https://project3livedemo.com/">
+                        <button type="submit">
+                                Live Demo
+                            </button>
+                    </form>
+                </div>
+            </div>
         </section>
 
-        <hr>
         <section id="contact">
             <h2>Contact Me</h2>
 
             <h3>Social Media</h3>
             <ul>
-                <li> <a href="https://www.linkedin.com/in/raphaeloh96/">
-                        LinkedIn
-                    </a></li>
-                <li><a href="https://www.facebook.com/raphaeloh96/">
-                        Facebook
-                    </a></li>
-                <li><a href="https://www.instagram.com/raphaeloh96/?hl=en">
-                        Instagram
-                    </a></li>
+                <li> 
+                    <a href="https://www.linkedin.com/in/raphaeloh96/">
+                        <img class="social-icon" src="linkedin-icon.svg" alt="Connect via LinkedIn">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/raphaeloh96/">
+                        <img class="social-icon" src="fb-icon.svg" alt="Connect via Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/raphaeloh96/?hl=en">
+                        <img class="social-icon" src="ig-icon.svg" alt="Connect via Instagram">
+                    </a>
+                </li>
             </ul>
+
             <br>
+            <form>
+                <fieldset>
+                    <legend class="contact-form-legend">Contact me via form</legend>
+                    <label for="name">Your Name:</label>
+                    <input class="contact-form-input" type="text" id="name" name="name"><br><br><br>
 
-            <div>
-                <form>
-                    <fieldset>
-                        <legend>Contact Me via Form</legend>
-                        <label for="name">Your Name:</label>
-                        <input type="text" id="name" name="name"><br><br><br>
+                    <label for="email">Your Email Address:</label>
+                    <input class="contact-form-input" type="email" id="email" name="email"><br><br><br>
 
-                        <label for="email">Your Email Address:</label>
-                        <input type="email" id="email" name="email"><br><br><br>
+                    <label for="subject">Choose Subject:</label>
+                    <input class="contact-form-input" list="subjects" name="subject" id="subject">
+                    <datalist id="subjects">
+                        <option value="Job Opportunities">
+                        <option value="Projects">
+                        <option value="Academics">
+                        <option value="Personal">
+                        <option value="Other">
+                    </datalist><br><br><br>
 
-                        <label for="subject">Choose Subject:</label>
-                        <input list="subjects" name="subject" id="subject">
-                        <datalist id="subjects">
-                            <option value="Job Opportunities">
-                            <option value="Projects">
-                            <option value="Academics">
-                            <option value="Personal">
-                            <option value="Other">
-                        </datalist><br><br><br>
+                    <label for="message">Message:</label>
+                    <textarea class="contact-form-input" id="message" name="message"></textarea><br><br><br>
 
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" placeholder="Write something.."></textarea><br><br><br>
-
-                        <input type="submit" value="Submit">
-                    </fieldset>
-                </form>
-            </div>
+                    <input class="contact-form-btn" type="submit" value="Submit">
+                </fieldset>
+            </form>
         </section>
 
         <!--
@@ -369,15 +387,13 @@
             </ul>
         </section> -->
 
-        <hr>
-
     </main>
     <footer>
         <nav class="footer-links"></nav>
         <strong>&copy; Copyright 2022, Raphael Oh</strong>
     </footer>
 
-    <script>(function(){window['__CF$cv$params']={r:'6d4d66eb9ba80ca3',m:'lZ.tOSMUECmVYD8AmrtDfz5PFNDF5n84pRr2KAO01qo-1643406266-0-AV8VTx9bttYOERUckcSVj0q/vb/mXfZ+/9DZiP7T2R7ormtVAgai36hya2q73T185R3grlmJk/0ZlJCthcwq/Z+WSXGlSoW9Zl92i3nbxp1GLfA7A9bnY0wFne10uV9iQZRxQQRTbtsJMC1+rBNWl8ruN2XKBfl1ywN8FCAxBrVvbuYzXk3WNSZmsDL0mI87Ig==',s:[0xf89892abcd,0xe540a703f6],}})();</script>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6dbb72ae3b497c6e',m:'WGhhe6UMEAZeobx3.U_0I4veat.LEsEvSVZGtn_KA9k-1644560181-0-AYgJWkIOn1rAQbUeZj40VGKBNQR+WPwu29L7YI8t3R/sSMuswy9qqkKDcbSa9KY9YjUiSmjc/l/MV0nz7qprsLFuq70/+lSxeSuHm4eoNJsUnChicHbIw0a/CC9HnGWGE263QAC12MXb5pt8lG018FUd+P5FHufIHXXGS9xZ/hl937nqXZhcKzmB26qH5/hmcQ==',s:[0xeb660911f4,0xbfdd26da27],}})();</script></body>
 
 </body>
 
