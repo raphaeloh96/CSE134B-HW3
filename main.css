@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
 :root {
     --themecolor: #00e4f0;
     --white: #ffffff;
@@ -40,6 +41,28 @@ nav a {
     }
 }
 
+#myBtn 
+{
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: #00e4f0;
+    color: white;
+    cursor: grab;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#myBtn:hover 
+{
+    background-color: rgb(3, 15, 64);
+    transform: scale(1.2,1.2);
+}
 
 /* Medium devices (tablets) */
 
@@ -71,33 +94,10 @@ nav ul li {
     margin: 8px;
 }
 
-.go-to-top {
-    background: transparent;
-    color: var(--themecolor);
-    position: fixed;
-    bottom: 0;
-    transition: all 0.7s 0s;
-}
-
-.go-to-top:hover {
-    transform: rotate(360deg);
-}
-
-.go-to-top img {
-    width: 2.3rem;
-    height: 2.3rem;
-    float: none;
-    display: inline-block;
-    border: 1px solid var(--themecolor);
-    border-radius: 50%;
-    margin: 1rem;
-}
-
-
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (tablets) */
 
 @media only screen and (min-width: 600px) {
-    .go-to-top {
+    .myBtn {
         display: none;
     }
     nav {
@@ -300,13 +300,6 @@ https://wallpaperaccess.com/1920x1080-hd-beach-desktop
     text-align: center;
 }
 
-#education h4 {
-    font-size: 1.3rem;
-    font-weight: 300;
-    color: gray;
-    margin: 0;
-}
-
 #education p {
     color: gray;
     margin: 1.2vh;
@@ -359,13 +352,6 @@ https://wallpaperaccess.com/1920x1080-hd-beach-desktop
     line-height: 1.875;
     margin-bottom: 0.3rem;
     text-align: center;
-}
-
-#experience h4 {
-    font-size: 1.3rem;
-    font-weight: 300;
-    color: gray;
-    margin: 0;
 }
 
 #experience p {
@@ -533,7 +519,7 @@ https://wallpaperaccess.com/1920x1080-hd-beach-desktop
 }
 
 
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones) */
 
 @media only screen and (max-width: 600px) {
     #contact {

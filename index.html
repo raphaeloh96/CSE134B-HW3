@@ -22,6 +22,28 @@
 </head>  
 
 <body>
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Go Back to Top</button>
+
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+
     <header>
         <nav id="navbar">
             <ul>
@@ -36,7 +58,7 @@
             </ul>
         </nav>
     </header>
-
+    
     <main>
         <a href="#navbar" class="go-to-top">
             <img src="arrow-up.svg" alt="Go to Top">
@@ -84,6 +106,7 @@
 
         <section id="skills">
             <h2>Skills</h2>
+            <p>Here are my Skill Profiecieny Level</p>
 
             <table>
                 <colgroup>
@@ -134,20 +157,20 @@
             <p>Here is my Education History</p>
             <h3>Northwood High School</h3>
             <p class="">
-                I attended Northwood High School from 2011 to 2015. <br>
+                I attended <strong>Northwood High School</strong> from 2011 to 2015. <br>
                 Northwood High School is located in Irvine, California.
             </p>
             <br>
             <h3>Cerritos College</h3>
             <p>
-                I attended Cerritos College from 2018 to 2020. <br>
+                I attended <strong>Cerritos College</strong> from 2018 to 2020. <br>
                 My major was Computer Science, A.S. <br>
                 Cerritos College is located in Cerritos, California.
             </p>
             <br>
             <h3>University of California, San Diego</h3>
             <p>
-                I attended UCSD from 2020 to 2023. <br>
+                I attended <strong>UCSD</strong> from 2020 to 2023. <br>
                 My major was Computer Science, B.S. <br>
                 UCSD is located in San Diego, California.
             </p>
@@ -252,7 +275,7 @@
             <br>
             <form>
                 <fieldset>
-                    <legend class="contact-form-legend">Contact me via form</legend>
+                    <legend class="contact-form-legend">Contact me via Form</legend>
                     <label for="name">Your Name:</label>
                     <input class="contact-form-input" type="text" id="name" name="name"><br><br><br>
 
@@ -390,7 +413,7 @@
     </main>
     <footer>
         <nav class="footer-links"></nav>
-        <strong>&copy; Copyright 2022, Raphael Oh</strong>
+        &copy; Copyright 2022, Raphael Oh
     </footer>
 
     <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6dbb72ae3b497c6e',m:'WGhhe6UMEAZeobx3.U_0I4veat.LEsEvSVZGtn_KA9k-1644560181-0-AYgJWkIOn1rAQbUeZj40VGKBNQR+WPwu29L7YI8t3R/sSMuswy9qqkKDcbSa9KY9YjUiSmjc/l/MV0nz7qprsLFuq70/+lSxeSuHm4eoNJsUnChicHbIw0a/CC9HnGWGE263QAC12MXb5pt8lG018FUd+P5FHufIHXXGS9xZ/hl937nqXZhcKzmB26qH5/hmcQ==',s:[0xeb660911f4,0xbfdd26da27],}})();</script></body>
